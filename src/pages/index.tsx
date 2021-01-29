@@ -1,7 +1,7 @@
 import { CheckIcon, CloseIcon } from '@chakra-ui/icons';
 import { Box, Center, Flex, FormControl, FormLabel, Heading, Input, InputGroup, InputRightElement, Stack, Table, TableCaption, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import interpret from '../parser/parser';
+import interpret from '../parser/interpreter';
 
 const Index = () => {
     const [result, setResult] = useState<Object>(null);
