@@ -1141,6 +1141,11 @@ aproba@^1.0.3, aproba@^1.1.1:
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
   integrity sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==
 
+arcsecond@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/arcsecond/-/arcsecond-3.1.2.tgz#4e56fe85f6a38c38c370b7ba1a038837cdc260fb"
+  integrity sha512-p9W8rdo7UzS928NZ3/vTdEu031HzoSV920nLaa1gASq0PKtNF9wrOlXOy2Mixio25tAT3NYj/EI6idaXJ0lQsg==
+
 are-we-there-yet@~1.1.2:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/are-we-there-yet/-/are-we-there-yet-1.1.5.tgz#4b35c2944f062a8bfcda66410760350fe9ddfc21"
