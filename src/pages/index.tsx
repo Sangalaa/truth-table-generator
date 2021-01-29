@@ -1,12 +1,11 @@
 import { CheckIcon, CloseIcon } from '@chakra-ui/icons';
-import { Box, Center, Flex, FormControl, FormLabel, Heading, Input, InputGroup, InputRightElement, Stack, Table, TableCaption, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react';
+import { Center, Flex, FormControl, FormLabel, Heading, Input, InputGroup, InputRightElement, Stack, Table, TableCaption, Tbody, Td, Th, Thead, Tr } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import interpret from '../parser/interpreter';
 
 const Index = () => {
     const [result, setResult] = useState<Object>(null);
-
-    const [error, setError] = useState(null);
+    const [error, setError] = useState<Object>(null);
 
     return (
         <Flex alignItems="center" justifyContent="center">
@@ -14,9 +13,9 @@ const Index = () => {
             <Center><Heading as="h1">Truth table generator</Heading></Center>
             
             <FormControl isInvalid={!!error}>
-                <FormLabel htmlFor="expression">Expression</FormLabel>
+                <FormLabel htmlFor="formula">Formula</FormLabel>
                 <InputGroup>
-                    <Input name="expression" id="expression" type="text" label="Expression" placeholder="A => (B => A)" onChange={(e) => {
+                    <Input name="formula" id="formula" type="text" label="Formula" placeholder="A => (B => A)" onChange={(e) => {
                         try {
                             if(e.target.value === '') setResult(null);
                             else setResult(interpret('(' + e.target.value + ')'));
@@ -24,7 +23,7 @@ const Index = () => {
                             setError(null);
                         }
                         catch(err) {
-                            setError({expression: "Invalid expression"});
+                            setError({formula: "Invalid formula"});
                         }
                     }}>
 

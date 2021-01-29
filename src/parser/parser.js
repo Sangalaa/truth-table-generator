@@ -16,7 +16,7 @@ const letterParser = pipeParsers([
     letters,
     mapTo((result) => ({
         type: 'letter',
-        value: result
+        value: result.toUpperCase()
     }))
 ]);
 
