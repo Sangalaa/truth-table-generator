@@ -12,6 +12,7 @@ I have built truth table generator for propositional logic formulas which genera
 
 ## Built With
 
+-   [Next.js](https://github.com/vercel/next.js/)
 -   [React](https://github.com/facebook/react)
 -   [Chakra UI](https://github.com/chakra-ui/chakra-ui)
 -   [Arcsecond](https://github.com/francisrstokes/arcsecond)
